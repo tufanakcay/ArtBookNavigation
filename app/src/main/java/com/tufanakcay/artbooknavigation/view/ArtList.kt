@@ -27,7 +27,6 @@ class ArtList : Fragment() {
     private lateinit var artDao : ArtDao
     private lateinit var artDatabase : ArtDatabase
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -66,7 +65,6 @@ class ArtList : Fragment() {
         artAdapter = ArtListAdapter(artList)
         binding.recyclerView.adapter = artAdapter
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
